@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TheCrunchie.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://asset-a.grid.id/crop/0x0:0x0/x/photo/2020/12/03/2744978964.jpg" alt="Ayam original" style="width:100%">
+      <h3>Ayam curnchie</h3>
+	  <p>Ayam curnchie original.</p>
+    </div>
+    <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://images.unsplash.com/photo-1569058242252-623df46b5025?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdCUyMGNoaWNrZW58ZW58MHx8MHx8fDA%3Dhttps://images.unsplash.com/photo-1569058242252-623df46b5025?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGhvdCUyMGNoaWNrZW58ZW58MHx8MHx8fDA%3D">
+      <h3> Ayam cruncie pedas</h3>
+      <p> Ayam cruncie dengan toping pedas</p>
+    </div>
+  </div>
+<!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="https://images.app.goo.gl/TpbydTxmzmSuAKew8.jpg" alt="Ayam berpaket" style="width:100%">
+      <h3>Ayam cruncie paket nasi</h3>
+      <p>Paket ayam dengan nasi</p>
+    </div>
+  </div>
+</div>
+    <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    </div>
+  </div>
+<hr id="about">
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About The Chruncie, The Chruncie</h3><br>
+    <img src="data:image/jpeg;base64,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" alt="CONTACT PERSON: 0895351109292" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>I am Who I Am!</b></h4>
+      <h6><i>With Passion For Real, Good Food</i></h6>
+	  <h6><i>With Passion For Real, Good Food</i></h6>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    </div>
+  </div>
+  <hr>
+<!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+<div class="w3-third">
+      <h3>BLOG POSTS</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Lorem</span><br>
+          <span>Sed mattis nunc</span>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Ipsum</span><br>
+		  <span>Praes tinci sed</span>
+        </li> 
+      </ul>
+    </div>
+<div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+<span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+		<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
+		<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
+		<span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
